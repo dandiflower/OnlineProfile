@@ -1,26 +1,20 @@
-#logo {
+/* navbar */
+
+.navbar-brand {
     float: left;
-    margin-left: 15%;
-    z-index: 99;
+    margin-left: -5%; 
     width: 250px;
     height: 90px;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 90px;
-    color: #fff;
     text-align: center;
     text-decoration: none;
     background: #4aaaa5;
 }
 
-nav {
-    margin-right: 10%;
-    margin-top: 25px;
-}
-
-nav a {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.nav-link {
     display: inline-block;
     padding-left: 15px;
     margin-left: 15px;
@@ -30,6 +24,170 @@ nav a {
     border-left: 1px solid #efefef;
 }
 
-nav a:first-child {
-    border-left: 0 none;
+.navbar {
+    justify-content: space-around;
+    padding: 0;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
 }
+
+/* general */
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+    font-size: 22px;
+}
+
+/* main */
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777;
+    background-color: #ebebeb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: #fff;
+    width: 100%;
+    max-width: 650px;
+    padding: 3%;
+    margin-left: 5%;
+}
+
+/* portfolio page */
+
+picture {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    height: 288px;
+    margin: 20px 0 25px;
+    overflow: auto;
+}
+
+.work:nth-child(even) {
+    margin-right: 40px;
+}
+
+.work img {
+    margin-right: 3%;
+    padding: 0;
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+}
+
+/* sticky footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+}
+
+/* Contact page */
+
+
+@media only screen and (max-width: 640px) {
+
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container-fluid {
+        width: 100%;
+        max-width: 550px;
+        margin-left: 5%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 640px;
+        margin-left: 5%;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .work h3 {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 0;
+        font-weight: 300;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        background: #4aaaa5;
+        border-bottom: 0;
+    }

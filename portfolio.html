@@ -1,65 +1,125 @@
-<!doctype html>
-<html lang="en-us">
+<!--Bootstrap Class test-->
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>About | Jessica Brush</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <!--Bootstrap nav bar-->
+  <!-- Navbar style overrides -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" style="color: #fff;" href="index.html">Jessica Brush</a>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+    </ul>
     </div>
-  </header>
+  </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
+  <!-- creating the container -->
 
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
+  <div class="container-fluid">
+
+    <!-- Row 1-->
+    <div class="row">
+      <div class="col-lg-12">
+
+        <h1>Portfolio</h1>
+
+      </div>
+    </div>
+
+    <!--Row 2-->
+    
+        <section>
+          <!--Sub Row w/ columns-->
+        <div class="row">
+          <div class="col-md-5">
+            <picture class="work">
+              <source srcset="assets/images/creature.jpg" type="image/svg+xml">
+              <img src="assets/images/creature.jpg" class="img-thumbnail" alt="UX">
+              <h3>Art</h3>
+            </picture>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <picture class="work">
+              <source srcset="assets/images/architecture.jpg" type="image/svg+xml">
+              <img src="assets/images/architecture.jpg" class="img-thumbnail" alt="Architecture">
+              <h3>Architecture</h3>
+            </picture>
+          </div>
+        </div>
         
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+          <!--Sub Row w/ columns-->
+          <div class="row">
+            <div class="col-md-5">
+              <picture class="work">
+                <source srcset="assets/images/fabrication.jpg" type="image/svg+xml">
+                <img src="assets/images/fabrication.jpg" class="img-thumbnail" alt="fabrication">
+                <h3>Fabrication</h3>
+              </picture>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <picture class="work">
+                <source srcset="assets/images/UX.jpg" type="image/svg+xml">
+                <img src="assets/images/UX.jpg" class="img-thumbnail" alt="ux">
+                <h3>UX</h3>
+              </picture>
+            </div>
+          </div>
 
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+          <!--Sub Row w/ columns-->
+          <div class="row">
+            <div class="col-md-5">
+              <picture class="work">
+                <source srcset="assets/images/coding.jpg" type="image/svg+xml">
+                <img src="assets/images/coding.jpg" class="img-thumbnail" alt="coding">
+                <h3>Web</h3>
+              </picture>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
 
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+            </div>
+          </div>
 
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+          </section>
 
-        <h3>Rock Paper Scissors</h3>
       </div>
 
-    </section>
+  <!-- Row 3 Sticky Footer -->
+  <div class="row">
+    <!-- Column 1 Row 2 -->
+
+    <footer>
+      <div class="container">
+        Copyright &copy;
+      </div>
+    </footer>
 
   </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
 </body>
 
 </html>
+
+
