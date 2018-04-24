@@ -1,7 +1,7 @@
 
 .navbar-brand {
     float: left;
-    margin-left: 5%; 
+    margin-left: -5%; 
     width: 250px;
     height: 90px;
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -24,8 +24,8 @@
 }
 
 .navbar {
+    justify-content: space-around;
     padding: 0;
-    position: fixed;
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
@@ -35,12 +35,45 @@
     border-bottom: 2px solid #ccc;
 }
 
+/* h1 {
+    padding-bottom: 20px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+} */
+
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+
 h1 {
     padding-bottom: 20px;
     font-size: 30px;
     line-height: 49px;
     border-bottom: 3px solid #ddd;
 }
+
+h2,
+h3 {
+    font-size: 22px;
+}
+
 
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
